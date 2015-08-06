@@ -1,0 +1,11 @@
+{
+  "name": "local-blog",
+  "version": "0.1.0",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0"
+  },
+  "dependencies": {
+    "gulp-haml": "^0.1.5"
+  }
+}

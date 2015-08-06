@@ -1,0 +1,38 @@
+!!! 5
+%html{lang: "en"}
+  %head
+    %meta{charset:"UTF-8"}
+    %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+    %title Blog
+    %link{rel:"stylesheet", href:"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"}
+    %link{rel:"stylesheet", href:"css/style.css"}
+  %body
+    %div{class:"wrapper container"}
+      %div{class:"not-support text-center"}
+      %div{class:"post"}
+      %div{class:"text-center"}
+        %div{class:"btn-group"}
+          %button{type:"button", class:"btn btn-success", data-toggle:"modal", data-target:"#addBlog"} Add new
+          %button{type:"button", class:"btn btn-danger", data-toggle:"modal", data-target:"#deleteAll"} Clear all
+    %div{id:"addBlog", class:"modal fade", role:"dialog"}
+      %div{class:"modal-dialog"}
+        %div{class:"modal-content"}
+          %div{class:"modal-header"}
+            %button{type:"button", class:"close", data-dismiss:"modal"} &times;
+            %h4{class:"modal-title"} Add new post
+          %div{class:"modal-body"}
+            %input{type:"text", class:"form-control input-title", placeholder:"Title"}
+            %textarea{class:"form-control input-content", rows:"3", placeholder:"Your topic"}
+            %button{type:"button", class:"btn btn-default post-btn center-block"} Post
+    %div{id:"deleteAll", class:"modal fade", role:"dialog"}
+      %div{class:"modal-dialog"}
+        %div{class:"modal-content"}
+          %div{class:"modal-body"}
+            %p{class:"text-center"} Are you sure?
+            %div{class:"text-center"}
+              %div{class:"btn-group"}
+                %button{type:"button", class:"btn btn-default not-delete"} No
+                %button{type:"button", class:"btn btn-danger delete-all-btn"} Yes
+  %script{src:"https://code.jquery.com/jquery-1.10.2.js"}
+  %script{src:"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"}
+  %script{src:"js/script.js"}

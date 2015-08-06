@@ -1,0 +1,9 @@
+.wrapper {
+	max-width: 800px;
+}
+.post-btn {
+	width: 200px;
+}
+#deleteAll button {
+	width: 200px;
+}
